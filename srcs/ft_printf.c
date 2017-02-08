@@ -6,7 +6,7 @@
 /*   By: dzheng <dzheng@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/27 10:22:35 by dzheng            #+#    #+#             */
-/*   Updated: 2017/02/08 19:15:08 by dzheng           ###   ########.fr       */
+/*   Updated: 2017/02/08 19:54:41 by dzheng           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,7 +70,7 @@ t_flags			get_struct(const char *s, int *i, t_flags b, va_list ap)
 			*i = *i + 1;
 	}
 	else if (s[*i + 1] == '*')
-		b = get_width(s, i, b, ap);
+		b = get_width(i, b, ap);
 	if (s[*i + 1] == '.')
 		b = get_precision(s, i, b, ap);
 	if (s[*i + 1] == 'h' || s[*i + 1] == 'l' ||

@@ -6,13 +6,13 @@
 /*   By: dzheng <dzheng@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/08 19:14:14 by dzheng            #+#    #+#             */
-/*   Updated: 2017/02/08 19:16:52 by dzheng           ###   ########.fr       */
+/*   Updated: 2017/02/08 19:54:11 by dzheng           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/ft_printf.h"
 
-t_flags			get_width(const char *s, int *i, t_flags b, va_list ap)
+t_flags			get_width(int *i, t_flags b, va_list ap)
 {
 	b.size_lenght = va_arg(ap, int);
 	if (b.size_lenght < 0)

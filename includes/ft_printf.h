@@ -6,7 +6,7 @@
 /*   By: dzheng <dzheng@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/27 10:26:39 by dzheng            #+#    #+#             */
-/*   Updated: 2017/02/08 19:16:28 by dzheng           ###   ########.fr       */
+/*   Updated: 2017/02/08 19:55:30 by dzheng           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ int					ft_printf(const char *format, ...);
 
 int					ft_check_letter(va_list ap, char c, t_flags flaggs);
 int					ft_check_there_is_letter(char c);
-t_flags				get_width(const char *s, int *i, t_flags b, va_list ap);
+t_flags				get_width(int *i, t_flags b, va_list ap);
 t_flags				get_precision(const char *s, int *i, t_flags b, va_list ap);
 
 char				*ft_strchar(char c, size_t size);
